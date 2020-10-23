@@ -1,0 +1,22 @@
+{
+    "name": "@amjs/react-tools",
+    "version": "0.1.0",
+    "description": "Development tools for building and compiling your ReactJS application",
+    "keywords": [
+        "tools",
+        "build",
+        "serve",
+        "reactjs"
+    ],
+    "license": "MIT",
+    "author": "Arturo Martínez Díaz <arturo.mart.diaz@gmail.com>",
+    "repository": {
+        "type": "git"
+    },
+    "dependencies": {
+        "@amjs/vue-tools": "^1.1.1",
+        "@babel/preset-react": "^7.12.1",
+        "react": "^17.0.1",
+        "react-dom": "^17.0.1"
+    }
+}
