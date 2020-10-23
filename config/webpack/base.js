@@ -4,7 +4,6 @@ const path = require('path');
 const resolver = require('../resolver');
 const loaderUrl = require(resolver('config/webpack/loader/url'));
 const SassLintWebpackPlugin = require(resolver('config/webpack/plugin/sass-lint'));
-const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 const { isPro = false } = require('../node-tools');
 
@@ -20,9 +19,8 @@ module.exports = {
     },
     resolve : {
         symlinks   : false,
-        extensions : ['.js', '.vue', '.mjs', '.json'],
+        extensions : ['.js', '.mjs', '.json'],
         alias      : {
-            vue$ : 'vue/dist/vue.esm.js',
             '@'  : path.resolve('src')
         }
     },
@@ -41,7 +39,6 @@ module.exports = {
         ]
     },
     plugins : [
-        new VueLoaderPlugin(),
         new SassLintWebpackPlugin({
             configFile  : path.resolve(__dirname, '..', '..', '.sass-lint.yml'),
             failOnError : isPro,
@@ -50,7 +47,6 @@ module.exports = {
     ],
     node : {
         // Previene que webpack inyecte inútiles setImmediate polyfills porque
-        // Vue ya lo contiene.
         setImmediate    : false,
         // Previene que webpack inyecte mocks para los módulos nativos que no
         // Tienen sentido en el cliente.

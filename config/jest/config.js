@@ -31,7 +31,7 @@ module.exports = {
             statements : -10
         }
     },
-    moduleFileExtensions : ['js', 'json', 'mjs', 'vue'],
+    moduleFileExtensions : ['js', 'json', 'mjs'],
     moduleNameMapper     : {
         '^%/(.*)$' : `${root}/$1`,
         '^@/(.*)$' : '<rootDir>/src/$1',
@@ -40,10 +40,8 @@ module.exports = {
     rootDir             : cwd,
     roots               : ['<rootDir>/src', '<rootDir>/tests'],
     setupFiles          : setup,
-    snapshotSerializers : ['jest-serializer-vue'],
     transform           : {
-        '\\.m?js$' : `${root}/config/jest/babel.js`,
-        '\\.vue$'  : `${root}/config/jest/vue.js`
+        '\\.m?js$' : `${root}/config/jest/babel.js`
     },
     transformIgnorePatterns : ['node_modules/(?!(?:@amjs))']
 };

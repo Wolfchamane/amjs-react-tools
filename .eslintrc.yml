@@ -14,8 +14,7 @@ globals:
     it: true
     Promise: true
     Symbol: true
-
-parser: vue-eslint-parser
+    React: true
 
 parserOptions:
     parser: babel-eslint
@@ -25,9 +24,6 @@ parserOptions:
         jsx: true
         modules: true
         experimentalObjectRestSpread: true
-
-plugins:
-    - vue
 
 rules:
     array-callback-return: 2                # enforces return statements in callbacks of array’s methods
@@ -272,42 +268,3 @@ rules:
     wrap-iife: [2, inside]                  # require immediate function invocation to be wrapped in parentheses
     yield-star-spacing: [2, after]          # enforce spacing around the * in yield* expressions
     yoda: 2                                 # disallow yoda conditions
-
-    vue/html-closing-bracket-newline:       # require or disallow a line break before tag's closing brackets
-        - 2
-        - singleline: never
-          multiline: always
-    vue/html-closing-bracket-spacing:       # require or disallow a space before tag's closing brackets
-        - 2
-        - selfClosingTag: always
-    vue/html-self-closing:                  # enforce self-closing style
-        - 2
-        - html:
-            void: always
-    vue/max-attributes-per-line:            # enforce the maximum number of attributes per line
-        - 2
-        - singleline: 3
-    vue/order-in-components:                # enforce order of properties in components
-        - 2
-        - order:
-            - name
-            - el
-            - delimiters
-            - functional
-            - parent
-            - extends
-            - mixins
-            - components
-            - directives
-            - filters
-            - props
-            - propsData
-            - data
-            - computed
-            - watch
-            - LIFECYCLE_HOOKS
-            - methods
-            - model
-            - render
-            - renderError
-            - template
