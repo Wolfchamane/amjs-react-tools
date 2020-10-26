@@ -31,7 +31,6 @@ module.exports = {
         rules : [
             require(resolver('config/webpack/loader/eslint')),
             require(resolver('config/webpack/loader/babel')),
-            require(resolver('config/webpack/loader/pug')),
             require(resolver('config/webpack/loader/css'))(isPro),
             loaderUrl(['png', 'jpe?g', 'gif', 'svg'], 'images'),
             loaderUrl(['aac', 'flac', 'mp3', 'mp4', 'ogg', 'wav', 'webm'], 'media'),
