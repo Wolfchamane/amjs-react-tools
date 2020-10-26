@@ -1,6 +1,6 @@
 {
     "name": "@amjs/react-tools",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "description": "Development tools for building and compiling your ReactJS application",
     "keywords": [
         "tools",
@@ -11,7 +11,8 @@
     "license": "MIT",
     "author": "Arturo Martínez Díaz <arturo.mart.diaz@gmail.com>",
     "repository": {
-        "type": "git"
+        "type": "git",
+        "url": "git@github.com:Wolfchamane/amjs-react-tools.git"
     },
     "dependencies": {
         "@babel/core": "^7.11.6",
