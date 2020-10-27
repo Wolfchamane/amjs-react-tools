@@ -5,7 +5,7 @@ env:
 
 extends:
     - eslint:recommended
-    - plugin:vue/strongly-recommended
+    - plugin:react/recommended
 
 globals:
     require: true
