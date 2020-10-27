@@ -1,6 +1,6 @@
 {
     "name": "@amjs/react-tools",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Development tools for building and compiling your ReactJS application",
     "keywords": [
         "tools",
